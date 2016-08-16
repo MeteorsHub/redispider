@@ -12,6 +12,9 @@
     <OutputPath>.</OutputPath>
     <Name>redispider</Name>
     <RootNamespace>redispider</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>install</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -22,6 +25,15 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="redispider\config.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="redispider\config_default.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="redispider\log.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="redispider\slave.py">
       <SubType>Code</SubType>
     </Compile>
