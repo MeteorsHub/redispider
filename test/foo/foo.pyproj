@@ -3,18 +3,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>d2390561-4c06-44a1-9919-3773203a5e1c</ProjectGuid>
+    <ProjectGuid>c148da34-b72a-4b97-b8e4-abf7393a84fa</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>setup.py</StartupFile>
+    <StartupFile>fooMaster.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>redispider</Name>
-    <RootNamespace>redispider</RootNamespace>
-    <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>install</CommandLineArguments>
-    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <Name>foo</Name>
+    <RootNamespace>foo</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -25,34 +22,13 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="redispider\config.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\config_default.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\log.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\master.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\message.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\slave.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="redispider\util.py">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="setup.py" />
-    <Compile Include="redispider\__init__.py">
+    <Compile Include="fooMaster.py" />
+    <Compile Include="slave\fooSlave.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="redispider\" />
+    <Folder Include="slave\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

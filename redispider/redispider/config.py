@@ -78,7 +78,7 @@ try:
     import config_override
     configs = merge(configs, config_override.configs)
 except ImportError:
-    print('cannot import specific configs, espider will use default configs')
+    pass
 
 configs = toDict(configs)
 

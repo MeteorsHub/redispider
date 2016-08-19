@@ -5,6 +5,10 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "redispider", "redispider\redispider.pyproj", "{D2390561-4C06-44A1-9919-3773203A5E1C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{6C43A1F5-903C-4E91-8638-B5C5CA895523}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "foo", "test\foo\foo.pyproj", "{C148DA34-B72A-4B97-B8E4-ABF7393A84FA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,8 +17,13 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{D2390561-4C06-44A1-9919-3773203A5E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D2390561-4C06-44A1-9919-3773203A5E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C148DA34-B72A-4B97-B8E4-ABF7393A84FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C148DA34-B72A-4B97-B8E4-ABF7393A84FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C148DA34-B72A-4B97-B8E4-ABF7393A84FA} = {6C43A1F5-903C-4E91-8638-B5C5CA895523}
 	EndGlobalSection
 EndGlobal

@@ -29,18 +29,33 @@ configs = {
     },
     'redis':{
         'connection':{
-            'default_port':6379,
-            'default_password':'',
+            'port':6379,
+            'password':'',
+            'db':0,
             },
+        #cannot be override
         'key':{
-            'logger':'logger',
+            'main_message':'main_message',
+            'master_name':'master_name',
+            #init, wait, work, sleep, None
+            'master_state':'master_state',
+            'slave_name_offline':'slave_name_offline',
+            'slave_name_online':'slave_name_online',
+            'catalogue_url_set_activated':'catalogue_url_set_activated',
+            'catalogue_url_set_deactivated':'catalogue_url_set_deactivated',
+            'catalogue_url_list':'catalogue_url_list',
             }
         },
     'multi_process':{
-        #If 0 be the cpu core number of your computer
+        #0: the cpu core number of your computer
         'max_process':0,
         },
+    'master':{
+        'reconnection_delay':5,
+        'clear_redis_db':True,
+        'max_slave_num':100,
+        },
     'slave':{
-        
+        'reconnection_delay':5,
         }
 }
